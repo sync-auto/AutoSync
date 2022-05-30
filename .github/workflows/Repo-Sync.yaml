@@ -53,7 +53,31 @@ jobs:
           bash ./Sync.sh \
             https://github.com/wulove/my_scripts master \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/wulove           
-            
+      - name: X1a0He
+        run: |
+          bash ./Sync.sh \
+            https://github.com/X1a0He/jd_scripts_fixed main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/X1a0He            
+      - name: smiek2121
+        run: |
+          bash ./Sync.sh \
+            https://github.com/smiek2221/scripts master \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/smiek2121
+      - name: LingFeng0918
+        run: |
+          bash ./Sync.sh \
+            https://github.com/LingFeng0918/LF_JD main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/LingFeng0918
+      - name: gys619
+        run: |
+          bash ./Sync.sh \
+            https://github.com/gys619/Absinthe main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/gys619
+      - name: JDWXX
+        run: |
+          bash ./Sync.sh \
+            https://github.com/JDWXX/jd_job main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/JDWXX
             
       #- name: hundun
       #  run: |
@@ -131,14 +155,6 @@ jobs:
       #      https://github.com/jiulan/platypus main \
       #      https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/jiulan
 
-      #- name: smiek2221
-      #  run: |
-      #    bash ./Sync.sh \
-      #      https://github.com/smiek2221/scripts master \
-      #      https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/smiek2221
-      #- name: X1a0He
-      #  run: |
-      #    bash ./Sync.sh \
-      #      https://github.com/X1a0He/jd_scripts_fixed main \
-      #      https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/X1a0He
-#
+
+
+
