@@ -64,7 +64,7 @@ if [ -d "/tmp/source_repo" ]; then
         fi
     fi
 
-    rm -f README*
+    ### rm -f README*
     commit
 
     echo
