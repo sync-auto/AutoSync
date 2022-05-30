@@ -9,9 +9,9 @@ on:
   #  paths:
   #    - '.github/workflows/Repo-Sync.yaml'
 
-  # schedule:
+  schedule:
   #  - cron: 3-53/10 * * * *
-    - cron: 8 * * * *
+     - cron: 8 * * * *
 
 jobs:
   jd-scripts:
