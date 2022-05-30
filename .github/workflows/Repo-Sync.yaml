@@ -11,6 +11,7 @@ on:
 
   # schedule:
   #  - cron: 3-53/10 * * * *
+    - cron: 8 * * * *
 
 jobs:
   jd-scripts:
@@ -37,6 +38,23 @@ jobs:
           bash ./Sync.sh \
             https://github.com/KingRan/KR main \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/KingRan
+      - name: 6dylan6           
+        run: |
+          bash ./Sync.sh \
+            https://github.com/6dylan6/jdpro main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/6dylan6
+      - name: star261
+        run: |
+          bash ./Sync.sh \
+            https://github.com/star261/jd main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/star261
+      - name: wulove
+        run: |
+          bash ./Sync.sh \
+            https://github.com/wulove/my_scripts master \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/wulove           
+            
+            
       #- name: hundun
       #  run: |
       #    bash ./Sync.sh \
@@ -112,11 +130,7 @@ jobs:
       #    bash ./Sync.sh \
       #      https://github.com/jiulan/platypus main \
       #      https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/jiulan
-      #- name: star261
-      #  run: |
-      #    bash ./Sync.sh \
-      #      https://github.com/star261/jd main \
-      #      https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/star261
+
       #- name: smiek2221
       #  run: |
       #    bash ./Sync.sh \
