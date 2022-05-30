@@ -6,11 +6,11 @@ on:
   #push:
   #  branches:
   #    - 'main'
-    paths:
-      - '.github/workflows/Repo-Sync.yaml'
+  #  paths:
+  #    - '.github/workflows/Repo-Sync.yaml'
 
   # schedule:
-    - cron: 3-53/10 * * * *
+  #  - cron: 3-53/10 * * * *
 
 jobs:
   jd-scripts:
