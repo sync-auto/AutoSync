@@ -83,6 +83,16 @@ jobs:
           bash ./Sync.sh \
             https://github.com/Akali5/jd-depot main \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/jd-depot            
+      - name: QLScript2
+        run: |
+          bash ./Sync.sh \
+            https://github.com/ccwav/QLScript2 main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/QLScript2
+      - name: Checkjs
+        run: |
+          bash ./Sync.sh \
+            https://github.com/ITdesk01/Checkjs main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/Checkjs            
             
       #- name: hundun
       #  run: |
