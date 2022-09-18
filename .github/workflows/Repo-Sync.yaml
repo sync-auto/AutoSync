@@ -43,11 +43,11 @@ jobs:
           bash ./Sync.sh \
             https://github.com/6dylan6/jdpro main \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/6dylan6
-      - name: star261
-        run: |
-          bash ./Sync.sh \
-            https://github.com/star261/jd main \
-            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/star261
+      #- name: star261
+      #  run: |
+      #    bash ./Sync.sh \
+      #      https://github.com/star261/jd main \
+      #      https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/star261
       - name: wulove
         run: |
           bash ./Sync.sh \
