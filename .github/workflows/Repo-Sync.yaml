@@ -76,7 +76,7 @@ jobs:
       - name: JDWXX
         run: |
           bash ./Sync.sh \
-            https://github.com/JDWXX/jd_job main \
+            https://github.com/JDWXX/jd_job master \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/JDWXX
       - name: jd-depot
         run: |
