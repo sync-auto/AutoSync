@@ -93,6 +93,11 @@ jobs:
           bash ./Sync.sh \
             https://github.com/ITdesk01/Checkjs main \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/Checkjs            
+      - name: HarbourToulu
+        run: |
+          bash ./Sync.sh \
+            https://github.com/HarbourJ/HarbourToulu main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/HarbourToulu
             
       #- name: hundun
       #  run: |
