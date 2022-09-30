@@ -98,6 +98,11 @@ jobs:
           bash ./Sync.sh \
             https://github.com/HarbourJ/HarbourToulu main \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/HarbourToulu
+      - name: JDHelp
+        run: |
+          bash ./Sync.sh \
+            https://github.com/he1pu/JDHelp main \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/JDHelp            
             
       #- name: hundun
       #  run: |
