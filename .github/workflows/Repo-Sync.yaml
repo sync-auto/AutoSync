@@ -103,6 +103,11 @@ jobs:
           bash ./Sync.sh \
             https://github.com/he1pu/JDHelp main \
             https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/JDHelp            
+      - name: JDsc
+        run: |
+          bash ./Sync.sh \
+            https://github.com/inoyna12/JDsc master \
+            https://${{ github.repository_owner }}:${{ secrets.ACTION_SECRET }}@github.com/sync-auto/JDsc
             
       #- name: hundun
       #  run: |
